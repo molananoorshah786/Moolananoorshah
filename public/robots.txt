@@ -1,12 +1,25 @@
-# Allow all search engines to index the site
+# Robots.txt for Molana Noorshah - Famous Muslim Astrologer Website
+# This file tells search engine crawlers which pages they can or cannot request from your site
+
 User-agent: *
 Allow: /
 
-# Disallow sensitive or unnecessary files
-Disallow: /data/
-Disallow: /server.js
-Disallow: /package.json
-Disallow: /node_modules/
+# Allow access to important directories
+Allow: /assets/
+Allow: /services/
+Allow: /blog/
 
-# Sitemap for SEO
-Sitemap: https://www.yourclientwebsite.com/sitemap.xml
+# Disallow access to admin or private areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Allow specific files that might be blocked by default
+Allow: /robots.txt
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://www.molaananoorshah.com/sitemap.xml
+
+# Crawl delay (optional - helps manage server load)
+Crawl-delay: 1
