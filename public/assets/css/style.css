@@ -1,0 +1,338 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #111;
+  color: #fff;
+  padding: 15px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../images/astrologer-banner.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #000; /* fallback */
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #ff9800;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #e68900;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.services h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-item {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.service-item:hover {
+  background: #fffae6;
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  margin-bottom: 10px;
+  color: #ff9800;
+}
+
+.service-item p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  color: #ff9800;
+}
+
+/* About Section */
+.about {
+  background: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contact CTA Section */
+.contact-cta {
+  background: #ff9800;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-cta h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contact-cta p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+}
+/* =====================
+   BLOG STYLES
+   ===================== */
+
+/* Blog listing grid */
+.blog-list {
+  padding: 50px 20px;
+  background-color: #fafafa;
+}
+
+.blog-list h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Blog cards */
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content h3 {
+  font-size: 1.3rem;
+  margin: 0 0 10px;
+  color: #2c3e50;
+}
+
+.blog-content .date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.blog-content p {
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.blog-content .read-more {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #d35400;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.blog-content .read-more:hover {
+  background-color: #e67e22;
+}
+
+/* Single Blog Post Page */
+.blog-post {
+  padding: 50px 20px;
+  background-color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-post h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.blog-post img {
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.blog-post #post-content p {
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+}

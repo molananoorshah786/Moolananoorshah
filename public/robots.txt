@@ -1,0 +1,12 @@
+# Allow all search engines to index the site
+User-agent: *
+Allow: /
+
+# Disallow sensitive or unnecessary files
+Disallow: /data/
+Disallow: /server.js
+Disallow: /package.json
+Disallow: /node_modules/
+
+# Sitemap for SEO
+Sitemap: https://www.yourclientwebsite.com/sitemap.xml

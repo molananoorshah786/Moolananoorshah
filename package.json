@@ -1,0 +1,28 @@
+{
+  "name": "astrologer-website",
+  "version": "1.0.0",
+  "description": "Muslim Astrologer Website (HTML, CSS, JS, Express Backend)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "astrologer",
+    "website",
+    "express",
+    "nodejs",
+    "seo"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

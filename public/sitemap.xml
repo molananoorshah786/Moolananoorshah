@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.yourclientwebsite.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Main Pages -->
+  <url>
+    <loc>https://www.yourclientwebsite.com/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yourclientwebsite.com/contact.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://www.yourclientwebsite.com/services/love-problem.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourclientwebsite.com/services/horoscope.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.yourclientwebsite.com/blog/index.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.yourclientwebsite.com/blog/post-template.html?id=1</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.yourclientwebsite.com/blog/post-template.html?id=2</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.yourclientwebsite.com/blog/post-template.html?id=3</loc>
+    <priority>0.5</priority>
+  </url>
+</urlset>
