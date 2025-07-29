@@ -110,4 +110,9 @@
   .blog-content h3 {
     font-size: 1.1rem;
   }
+  .site-header {
+    position: static !important;
+    top: auto !important;
+    z-index: auto !important;
+  }
 }
