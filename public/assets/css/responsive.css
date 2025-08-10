@@ -69,6 +69,32 @@
     margin: 8px 0;
   }
 
+  /* Ensure header items stack nicely */
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .main-navigation { width: 100%; }
+  .main-navigation ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 0.75rem; /* prevent overflow */
+    width: 100%;
+  }
+  .main-navigation a { font-size: 0.95rem; padding: 0.4rem 0.75rem; }
+  .header-contact { align-items: center; }
+
+  /* Prevent horizontal overflow on small screens */
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Add bottom padding so floating buttons don't cover content */
+  body { padding-bottom: 110px; }
+
   /* Hero Section Mobile Styles */
   .hero-section {
     padding: 3rem 0 2rem;
@@ -107,9 +133,13 @@
     font-size: 16px;
   }
 
+  /* Home: reasons grid to avoid min 300px overflow */
+  .reasons-grid { grid-template-columns: 1fr; }
+
+  /* Floating actions compact placement */
   .floating-actions {
-    bottom: 15px;
-    right: 15px;
+    bottom: calc(15px + env(safe-area-inset-bottom));
+    right: calc(15px + env(safe-area-inset-right));
   }
 
                     .floating-btn {
@@ -795,65 +825,56 @@
 
 /* Small mobile devices */
 @media (max-width: 480px) {
-    .about-hero .hero-text h1 {
-        font-size: 1.8rem;
+    /* Tighter container padding to gain space */
+    .container { padding-left: 16px; padding-right: 16px; }
+
+    /* Wrap long headings/text safely */
+    h1, h2, h3, .hero-headline, .hero-subheadline { 
+      word-break: break-word; 
+      overflow-wrap: anywhere; 
     }
-    
-    .about-hero .hero-text h3 {
-        font-size: 1rem;
+
+  .image-overlay {
+        top: auto;             /* remove fixed top positioning */
+        bottom: 10px;          /* place it at the bottom of the image */
+        right: 10px;           /* keep it aligned to the right */
+        transform: scale(0.85); /* make it a bit smaller */
+        max-width: 80%;        /* prevent it from being too wide */
+        z-index: 5;            /* ensure proper stacking */}
+
+    .hero-headline { font-size: 2rem; }
+    .hero-subheadline { font-size: 1rem; }
+    .hero-description { font-size: 0.95rem; }
+
+    /* Further reduce nav spacing */
+    .main-navigation ul { gap: 0.4rem 0.6rem; }
+    .main-navigation a { font-size: 0.9rem; padding: 0.35rem 0.6rem; }
+
+    /* Make floating actions icon-only to avoid covering content */
+    .floating-actions .floating-btn { 
+      min-width: auto; 
+      padding: 12px; 
+      justify-content: center; 
     }
-    
-    .about-hero .hero-text p {
-        font-size: 0.9rem;
+    .floating-actions .floating-btn .btn-text { display: none; }
+
+    /* Legacy circular floating buttons sizing */
+    .floating-cta { 
+      bottom: calc(1rem + env(safe-area-inset-bottom)); 
+      right: calc(1rem + env(safe-area-inset-right)); 
+      gap: 0.75rem; 
     }
-    
-    .about-hero .trust-badge {
-        max-width: 250px;
-        padding: 0.6rem 0.8rem;
-        font-size: 0.75rem;
-    }
-    
-    .biography-section h2,
-    .expertise-section h2,
-    .achievements-section h2,
-    .philosophy-section h2,
-    .why-choose-about h2,
-    .contact-cta h2 {
-        font-size: 1.8rem;
-    }
-    
-    .expertise-card,
-    .achievement-item,
-    .reason-item {
-        padding: 1rem;
-    }
-    
-    .expertise-card .icon,
-    .achievement-icon,
-    .reason-icon {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .expertise-card .icon i,
-    .achievement-icon i,
-    .reason-icon i {
-        font-size: 1.5rem;
-    }
-    
-    .cta-button {
-        max-width: 250px;
-        padding: 0.8rem 1.2rem;
-        font-size: 0.9rem;
-    }
-    
-    .philosophy-text blockquote {
-        padding: 1.2rem;
-        font-size: 0.95rem;
-    }
-    
-    .principles-list li {
-        padding: 0.6rem 0.8rem;
-        font-size: 0.8rem;
-    }
+    .floating-call, .floating-whatsapp { width: 52px; height: 52px; font-size: 1.2rem; }
+
+    /* Ensure media scales */
+    img, video { max-width: 100%; height: auto; }
+
+    /* Service images slightly shorter on very small screens */
+    .service-image img { height: 160px; }
+}
+
+/* Ultra-small devices (<= 360px) safety tweaks */
+@media (max-width: 360px) {
+  .cta-button { min-width: 220px; }
+  .phone-number { font-size: 1rem; }
 }
