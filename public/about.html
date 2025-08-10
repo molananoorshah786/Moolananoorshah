@@ -19,6 +19,9 @@
     <meta property="og:url" content="https://www.molaananoorshah.com/about.html">
     <meta property="og:image" content="https://www.molaananoorshah.com/assets/images/molana-noorshah-about.jpg">
     
+    <!-- FontAwesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -59,49 +62,61 @@
                 </div>
                 <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about.html" aria-current="page">About Molana</a></li>
-                        <li><a href="/services/">Services</a></li>
-                        <li><a href="/testimonials.html">Testimonials</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html" aria-current="page">About Molana</a></li>
+                        <li><a href="./services/index.html">Services</a></li>
+                        <li><a href="./testimonials.html">Testimonials</a></li>
+                        <li><a href="./blog/index.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-contact">
-                    <a href="tel:+919876543210" class="phone-number">📞 +91-9876543210</a>
+                    <a href="tel:+919876543210" class="phone-number"><i class="fas fa-phone-alt"></i> +91-9876543210</a>
                     <span class="availability">Available 24/7</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Breadcrumb
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-        <div class="container">
-            <ol>
-                <h2><li><a href="/">Home</a></li><h2>
-                <li aria-current="page">About Molana Noor Shah</li>
-            </ol>
-        </div>
-    </nav> -->
-
-    <!-- About Hero Section -->
+    <!-- About Hero Section - Enhanced with trust-building elements -->
     <section class="about-hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>About Molana Noor Shah</h1>
-                    <h3>World's Most Trusted Muslim Astrologer & Spiritual Healer</h3>
-                    <p>With over 25 years of dedicated experience in Islamic astrology and spiritual healing, Molana Noor Shah has become one of the most respected and sought-after Muslim astrologers worldwide. His divine powers and deep knowledge of Islamic sciences have helped over 50,000 people find solutions to their life problems.</p>
+                    <h1 class="fade-in">About Molana Noor Shah</h1>
+                    <h3 class="fade-in">World's Most Trusted Muslim Astrologer & Spiritual Healer</h3>
+                    <p class="fade-in">With over 25 years of dedicated experience in Islamic astrology and spiritual healing, Molana Noor Shah has become one of the most respected and sought-after Muslim astrologers worldwide. His divine powers and deep knowledge of Islamic sciences have helped over 50,000 people find solutions to their life problems.</p>
+                    
+                    <!-- Trust Badges - Key qualities and experience -->
+                    <div class="trust-badges fade-in">
+                        <div class="trust-badge">
+                            <i class="fas fa-award"></i>
+                            <span>25+ Years Experience</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Confidential Consultations</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-users"></i>
+                            <span>50,000+ Happy Clients</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/images/MolanaNoor.png" alt="Molana Noor Shah - World Famous Muslim Astrologer" width="500" height="400">
+                    <img src="assets/images/MolanaNoor.png" alt="Molana Noor Shah - World Famous Muslim Astrologer" width="500" height="400" loading="eager">
+                    <div class="image-overlay">
+                        <div class="experience-badge">
+                            <i class="fas fa-star"></i>
+                            <span>25+ Years</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Biography Section -->
+    <!-- Biography Section - Enhanced with better layout and trust elements -->
     <section class="biography-section">
         <div class="container">
             <h2>Biography of Molana Noor Shah</h2>
@@ -119,49 +134,49 @@
                 </div>
                 
                 <div class="bio-image">
-                    <img src="assets/images/MolanaNoorShah.png" alt="Molana Noor Shah studying Islamic texts" width="400" height="300">
+                    <img src="assets/images/MolanaNoorShah.png" alt="Molana Noor Shah studying Islamic texts" width="400" height="300" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Expertise Section -->
+    <!-- Expertise Section - Enhanced with FontAwesome icons -->
     <section class="expertise-section">
         <div class="container">
             <h2>Areas of Expertise</h2>
             <div class="expertise-grid">
                 <div class="expertise-card">
-                    <div class="icon">💝</div>
+                    <div class="icon"><i class="fas fa-heart"></i></div>
                     <h3>Love Problem Solutions</h3>
                     <p>Expert in resolving all types of love and relationship issues including getting ex back, one-sided love, and love marriage problems.</p>
                 </div>
                 
                 <div class="expertise-card">
-                    <div class="icon">🛡️</div>
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>Black Magic Removal</h3>
                     <p>Specialized in detecting and removing black magic, evil eye, and negative energies using powerful Islamic spiritual methods.</p>
                 </div>
                 
                 <div class="expertise-card">
-                    <div class="icon">💑</div>
+                    <div class="icon"><i class="fas fa-rings-wedding"></i></div>
                     <h3>Husband Wife Problems</h3>
                     <p>Resolving marital disputes, divorce problems, and restoring harmony in married life through spiritual healing.</p>
                 </div>
                 
                 <div class="expertise-card">
-                    <div class="icon">💼</div>
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Business & Career</h3>
                     <p>Helping people overcome business obstacles, career problems, and financial difficulties through spiritual guidance.</p>
                 </div>
                 
                 <div class="expertise-card">
-                    <div class="icon">🏥</div>
+                    <div class="icon"><i class="fas fa-heartbeat"></i></div>
                     <h3>Health Issues</h3>
                     <p>Providing spiritual healing for chronic health problems and diseases that don't respond to medical treatment.</p>
                 </div>
                 
                 <div class="expertise-card">
-                    <div class="icon">👶</div>
+                    <div class="icon"><i class="fas fa-baby"></i></div>
                     <h3>Child Problems</h3>
                     <p>Solutions for childless couples, child health issues, and ensuring the wellbeing of children through spiritual blessings.</p>
                 </div>
@@ -169,38 +184,56 @@
         </div>
     </section>
 
-    <!-- Achievements Section -->
+    <!-- Achievements Section - Enhanced with better visual hierarchy -->
     <section class="achievements-section">
         <div class="container">
             <h2>Achievements & Recognition</h2>
             <div class="achievements-content">
                 <div class="achievements-grid">
                     <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
                         <h3>25+ Years Experience</h3>
                         <p>Over 25 years of dedicated service in Islamic astrology and spiritual healing</p>
                     </div>
                     
                     <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
                         <h3>50,000+ Happy Clients</h3>
                         <p>Successfully helped over 50,000 people worldwide solve their life problems</p>
                     </div>
                     
                     <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
                         <h3>99% Success Rate</h3>
                         <p>Achieved 99% success rate in providing effective solutions to various problems</p>
                     </div>
                     
                     <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
                         <h3>100+ Countries Served</h3>
                         <p>Providing services to people across the globe in over 100 countries</p>
                     </div>
                     
                     <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
                         <h3>Award Winner</h3>
                         <p>Received "Best Muslim Astrologer Award 2023" for outstanding service</p>
                     </div>
                     
                     <div class="achievement-item">
+                        <div class="achievement-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
                         <h3>Media Recognition</h3>
                         <p>Featured in various national and international media for expertise</p>
                     </div>
@@ -209,7 +242,7 @@
         </div>
     </section>
 
-    <!-- Philosophy Section -->
+    <!-- Philosophy Section - Enhanced with better styling -->
     <section class="philosophy-section">
         <div class="container">
             <h2>My Philosophy & Approach</h2>
@@ -218,52 +251,70 @@
                     <blockquote>
                         "Every problem has a solution in the divine wisdom of Allah. Through proper spiritual guidance and Islamic methods, any difficulty can be overcome with faith and patience."
                     </blockquote>
-                    <p><strong>- Molana Noor Shah</strong></p>
+                    <p class="quote-author"><strong>- Molana Noor Shah</strong></p>
                     
                     <h3>Core Principles:</h3>
-                    <ul>
-                        <li><strong>Faith-Based Solutions:</strong> All remedies are based on Islamic teachings and Quranic guidance</li>
-                        <li><strong>Complete Confidentiality:</strong> Every client's privacy is strictly maintained</li>
-                        <li><strong>No Harmful Methods:</strong> Only positive and safe spiritual methods are used</li>
-                        <li><strong>Guaranteed Results:</strong> Committed to providing effective solutions to all problems</li>
-                        <li><strong>24/7 Support:</strong> Always available for urgent help and guidance</li>
+                    <ul class="principles-list">
+                        <li><i class="fas fa-check-circle"></i><strong>Faith-Based Solutions:</strong> All remedies are based on Islamic teachings and Quranic guidance</li>
+                        <li><i class="fas fa-check-circle"></i><strong>Complete Confidentiality:</strong> Every client's privacy is strictly maintained</li>
+                        <li><i class="fas fa-check-circle"></i><strong>No Harmful Methods:</strong> Only positive and safe spiritual methods are used</li>
+                        <li><i class="fas fa-check-circle"></i><strong>Guaranteed Results:</strong> Committed to providing effective solutions to all problems</li>
+                        <li><i class="fas fa-check-circle"></i><strong>24/7 Support:</strong> Always available for urgent help and guidance</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Section -->
+    <!-- Why Choose Section - Enhanced with better visual elements -->
     <section class="why-choose-about">
         <div class="container">
             <h2>Why Choose Molana Noor Shah?</h2>
             <div class="reasons-grid">
                 <div class="reason-item">
+                    <div class="reason-icon">
+                        <i class="fas fa-quran"></i>
+                    </div>
                     <h3>Authentic Islamic Methods</h3>
                     <p>Uses only genuine Islamic spiritual methods based on Quran and Sunnah</p>
                 </div>
                 
                 <div class="reason-item">
+                    <div class="reason-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
                     <h3>Proven Track Record</h3>
                     <p>25 years of successful practice with thousands of satisfied clients</p>
                 </div>
                 
                 <div class="reason-item">
+                    <div class="reason-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
                     <h3>Quick Results</h3>
                     <p>Most problems are resolved within 3-21 days with visible improvements</p>
                 </div>
                 
                 <div class="reason-item">
+                    <div class="reason-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
                     <h3>Worldwide Service</h3>
                     <p>Providing services globally through phone, video calls, and online consultations</p>
                 </div>
                 
                 <div class="reason-item">
+                    <div class="reason-icon">
+                        <i class="fas fa-shield-check"></i>
+                    </div>
                     <h3>100% Safe Methods</h3>
                     <p>All spiritual remedies are completely safe with no negative side effects</p>
                 </div>
                 
                 <div class="reason-item">
+                    <div class="reason-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
                     <h3>Money Back Guarantee</h3>
                     <p>Full refund if promised results are not achieved within specified time</p>
                 </div>
@@ -271,17 +322,17 @@
         </div>
     </section>
 
-    <!-- Contact CTA -->
+    <!-- Contact CTA - Enhanced with better styling -->
     <section class="contact-cta">
         <div class="container">
             <h2>Ready to Transform Your Life?</h2>
             <p>Contact Molana Noor Shah today for expert guidance and guaranteed solutions to all your problems.</p>
             <div class="cta-options">
-                <a href="tel:+919876543210" class="cta-button primary">📞 Call Now: +91-9876543210</a>
-                <a href="https://wa.me/919876543210" class="cta-button secondary">💬 WhatsApp Chat</a>
-                <a href="mailto:contact@molaananoorshah.com" class="cta-button">📧 Email Us</a>
+                <a href="tel:+919876543210" class="cta-button primary"><i class="fas fa-phone-alt"></i> Call Now: +91-9876543210</a>
+                <a href="https://wa.me/919876543210" class="cta-button secondary"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
+                <a href="mailto:contact@molaananoorshah.com" class="cta-button"><i class="fas fa-envelope"></i> Email Us</a>
             </div>
-            <p class="guarantee">💯 100% Confidential | 24/7 Available | Guaranteed Results</p>
+            <p class="guarantee"><i class="fas fa-shield-alt"></i> 100% Confidential | <i class="fas fa-clock"></i> 24/7 Available | <i class="fas fa-check-circle"></i> Guaranteed Results</p>
         </div>
     </section>
 
@@ -293,10 +344,10 @@
                     <h3>Molana Noor Shah</h3>
                     <p>World-famous Muslim astrologer dedicated to solving your life problems through the divine power of Islamic astrology.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Instagram">📷</a>
-                        <a href="#" aria-label="YouTube">📺</a>
-                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
@@ -326,10 +377,10 @@
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <div class="contact-details">
-                        <p>📞 <a href="tel:+919876543210">+91-9876543210</a></p>
-                        <p>📧 <a href="mailto:contact@molaananoorshah.com">contact@molaananoorshah.com</a></p>
-                        <p>💬 <a href="https://wa.me/919876543210">WhatsApp</a></p>
-                        <p>🕐 Available 24/7</p>
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+919876543210">+91-9876543210</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:contact@molaananoorshah.com">contact@molaananoorshah.com</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919876543210">WhatsApp</a></p>
+                        <p><i class="fas fa-clock"></i> Available 24/7</p>
                     </div>
                 </div>
             </div>
@@ -339,6 +390,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Widget - getbutton.io integration -->
+    <script type="text/javascript">
+        (function () {
+            var options = {
+                whatsapp: "+919876543210",
+                call_to_action: "Message us on WhatsApp!",
+                position: "right",
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//" + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>

@@ -35,7 +35,7 @@
     <meta name="twitter:image" content="https://www.molaananoorshah.com/assets/images/molana-noorshah-astrologer.jpg">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     
     <!-- Structured Data Schema -->
@@ -96,6 +96,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="assets/css/style.css" as="style">
@@ -113,12 +114,12 @@
                 </div>
                 <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
                     <ul>
-                        <li><a href="/" aria-current="page">Home</a></li>
-                        <li><a href="/about.html">About Molana</a></li>
-                        <li><a href="/services/">Services</a></li>
-                        <li><a href="/testimonials.html">Testimonials</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="./index.html" aria-current="page">Home</a></li>
+                        <li><a href="./about.html">About Molana</a></li>
+                        <li><a href="./services/index.html">Services</a></li>
+                        <li><a href="./testimonials.html">Testimonials</a></li>
+                        <li><a href="./blog/index.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-contact">
@@ -134,28 +135,63 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2>Get Your Love Back in Just 3 Days</h2>
-                    <h3>100% Guaranteed Love Problem Solution by Molana Noor Shah</h3>
-                    <p class="hero-description">Solve all your love problems, get your ex back, remove black magic, and find happiness in your relationship with the help of world-famous Muslim astrologer Molana Noor Shah. With over 25 years of experience and thousands of successful cases.</p>
+                    <!-- Main headline introducing Molana Noorshah as trusted astrologer -->
+                    <h2 class="hero-headline fade-in">Trusted Muslim Astrologer Molana Noor Shah</h2>
                     
-                    <div class="hero-features">
+                    <!-- Subheadline with experience and problems solved -->
+                    <h3 class="hero-subheadline fade-in">25+ Years Experience • 50,000+ Success Stories • Love, Marriage & Life Solutions</h3>
+                    
+                    <p class="hero-description fade-in">Get expert guidance for love problems, marriage issues, black magic removal, and spiritual healing. World-renowned Islamic astrologer with proven track record of solving complex life challenges.</p>
+                    
+                    <div class="hero-features fade-in">
                         <div class="feature">✅ 100% Guaranteed Results</div>
-                        <div class="feature">✅ 24/7 Available</div>
+                        <div class="feature">✅ 24/7 Available Support</div>
                         <div class="feature">✅ Quick Results in 3-7 Days</div>
-                        <div class="feature">✅ Free Consultation</div>
+                        <div class="feature">✅ Free Initial Consultation</div>
                     </div>
                     
-                    <div class="hero-cta">
-                        <a href="tel:+919876543210" class="cta-button primary">Call Now for Free Consultation</a>
-                        <a href="#services" class="cta-button secondary">View Our Services</a>
+                    <!-- Two large CTA buttons as requested -->
+                    <div class="hero-cta fade-in">
+                        <a href="tel:+919876543210" class="cta-button primary">
+                            <span class="cta-icon">📞</span>
+                            Call Now for Free Consultation
+                        </a>
+                        <a href="https://wa.me/919876543210" class="cta-button secondary">
+                            <span class="cta-icon">💬</span>
+                            WhatsApp Now
+                        </a>
                     </div>
                 </div>
+                
+                <!-- Professional image of Molana Noorshah -->
                 <div class="hero-image">
-                    <img src="assets/images/Molana.png" alt="Molana Noor Shah - Famous Muslim Astrologer helping with love problems" width="500" height="400">
+                    <img src="assets/images/Molana.png" 
+                         alt="Molana Noor Shah - World Famous Muslim Astrologer and Spiritual Healer" 
+                         width="500" 
+                         height="400"
+                         loading="eager">
+                    <div class="image-overlay">
+                        <div class="experience-badge">
+                            <span class="years">25+</span>
+                            <span class="text">Years of<br>Experience</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Floating Action Buttons - Always visible call and WhatsApp CTAs for maximum conversions -->
+    <div class="floating-actions">
+        <a href="tel:+919876543210" class="floating-btn call-btn" aria-label="Call Now">
+            <i class="fas fa-phone-alt btn-icon"></i>
+            <span class="btn-text">Call Now</span>
+        </a>
+        <a href="https://wa.me/919876543210" class="floating-btn whatsapp-btn" aria-label="WhatsApp Now">
+            <i class="fab fa-whatsapp btn-icon"></i>
+            <span class="btn-text">WhatsApp</span>
+        </a>
+    </div>
 
     <!-- Why Choose Section -->
     <section class="why-choose-section">
@@ -204,81 +240,123 @@
             
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="assets/images/Love-Problem-Solution.png" alt="Love Problem Solution" width="300" height="200">
-                    <h3>Love Problem Solution</h3>
-                    <p>Get your lost love back, resolve relationship issues, and find true happiness in love.</p>
-                    <ul>
-                        <li>Get Your Ex Back</li>
-                        <li>Inter-Caste Love Marriage</li>
-                        <li>One Sided Love Solution</li>
-                        <li>Love Breakup Problem</li>
-                    </ul>
-                    <a href="/services/love-problem-solution.html" class="service-link">Learn More</a>
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/images/Love-Problem-Solution.png" alt="Love Problem Solution" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Love Problem Solution</h3>
+                        <p>Get your lost love back, resolve relationship issues, and find true happiness in love.</p>
+                        <ul>
+                            <li>Get Your Ex Back</li>
+                            <li>Inter-Caste Love Marriage</li>
+                            <li>One Sided Love Solution</li>
+                            <li>Love Breakup Problem</li>
+                        </ul>
+                        <a href="/services/love-problem-solution.html" class="service-link">Learn More</a>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <img src="assets/images/Husband-Wife-Dispute-Solution.png" alt="Husband Wife Problem Solution" width="300" height="200">
-                    <h3>Husband Wife Problem Solution</h3>
-                    <p>Resolve marital disputes, restore harmony, and strengthen your marriage bond.</p>
-                    <ul>
-                        <li>Divorce Problem Solution</li>
-                        <li>Extra Marital Affairs</li>
-                        <li>Family Disputes</li>
-                        <li>In-Laws Problems</li>
-                    </ul>
-                    <a href="/services/husband-wife-problem.html" class="service-link">Learn More</a>
+                    <div class="service-icon">
+                        <i class="fas fa-rings-wedding"></i>
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/images/Husband-Wife-Dispute-Solution.png" alt="Husband Wife Problem Solution" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Husband Wife Problem Solution</h3>
+                        <p>Resolve marital disputes, restore harmony, and strengthen your marriage bond.</p>
+                        <ul>
+                            <li>Divorce Problem Solution</li>
+                            <li>Extra Marital Affairs</li>
+                            <li>Family Disputes</li>
+                            <li>In-Laws Problems</li>
+                        </ul>
+                        <a href="/services/husband-wife-problem.html" class="service-link">Learn More</a>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <img src="assets/images/blackmagic.png" alt="Black Magic Removal" width="300" height="200">
-                    <h3>Black Magic Removal</h3>
-                    <p>Protect yourself from negative energies and remove black magic effects permanently.</p>
-                    <ul>
-                        <li>Evil Eye Removal</li>
-                        <li>Negative Energy Cleansing</li>
-                        <li>Spiritual Protection</li>
-                        <li>Curse Removal</li>
-                    </ul>
-                    <a href="/services/black-magic-removal.html" class="service-link">Learn More</a>
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/images/blackmagic.png" alt="Black Magic Removal" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Black Magic Removal</h3>
+                        <p>Protect yourself from negative energies and remove black magic effects permanently.</p>
+                        <ul>
+                            <li>Evil Eye Removal</li>
+                            <li>Negative Energy Cleansing</li>
+                            <li>Spiritual Protection</li>
+                            <li>Curse Removal</li>
+                        </ul>
+                        <a href="/services/black-magic-removal.html" class="service-link">Learn More</a>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <img src="assets/images/Business-problems.jpg" alt="Business Problem Solution" width="300" height="200">
-                    <h3>Business Problem Solution</h3>
-                    <p>Overcome business challenges, attract prosperity, and achieve financial success.</p>
-                    <ul>
-                        <li>Business Growth</li>
-                        <li>Financial Problems</li>
-                        <li>Career Issues</li>
-                        <li>Job Problems</li>
-                    </ul>
-                    <a href="/services/business-problem.html" class="service-link">Learn More</a>
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/images/Business-problems.jpg" alt="Business Problem Solution" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Business Problem Solution</h3>
+                        <p>Overcome business challenges, attract prosperity, and achieve financial success.</p>
+                        <ul>
+                            <li>Business Growth</li>
+                            <li>Financial Problems</li>
+                            <li>Career Issues</li>
+                            <li>Job Problems</li>
+                        </ul>
+                        <a href="./services/business-solution.html" class="service-link">Learn More</a>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <img src="assets/images/health-problems.jpg" alt="Health Problem Solution" width="300" height="200">
-                    <h3>Health Problem Solution</h3>
-                    <p>Spiritual healing for chronic health issues and overall well-being.</p>
-                    <ul>
-                        <li>Chronic Illness</li>
-                        <li>Mental Health</li>
-                        <li>Spiritual Healing</li>
-                        <li>Protection from Diseases</li>
-                    </ul>
-                    <a href="/services/health-problem.html" class="service-link">Learn More</a>
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/images/health-problems.jpg" alt="Health Problem Solution" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Health Problem Solution</h3>
+                        <p>Spiritual healing for chronic health issues and overall well-being.</p>
+                        <ul>
+                            <li>Chronic Illness</li>
+                            <li>Mental Health</li>
+                            <li>Spiritual Healing</li>
+                            <li>Protection from Diseases</li>
+                        </ul>
+                        <a href="/services/health-problem.html" class="service-link">Learn More</a>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <img src="assets/images/child-problem.jpg" alt="Child Problem Solution" width="300" height="200">
-                    <h3>Child Problem Solution</h3>
-                    <p>Blessings for children, solving fertility issues, and child-related problems.</p>
-                    <ul>
-                        <li>Get Pregnant</li>
-                        <li>Child Health Issues</li>
-                        <li>Child Behavior Problems</li>
-                        <li>Child Education</li>
-                    </ul>
-                    <a href="/services/child-problem.html" class="service-link">Learn More</a>
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/images/child-problem.jpg" alt="Child Problem Solution" width="300" height="200" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <h3>Child Problem Solution</h3>
+                        <p>Blessings for children, solving fertility issues, and child-related problems.</p>
+                        <ul>
+                            <li>Get Pregnant</li>
+                            <li>Child Health Issues</li>
+                            <li>Child Behavior Problems</li>
+                            <li>Child Education</li>
+                        </ul>
+                        <a href="./services/child-problem.html" class="service-link">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,6 +371,21 @@
                     <p class="lead">Molana Noor Shah is a world-renowned Muslim astrologer with over 25 years of experience in Islamic astrology, spiritual healing, and solving life problems through the divine power of Allah.</p>
                     
                     <p>Born into a family of spiritual healers, Molana Noor Shah has dedicated his life to helping people overcome their difficulties through the sacred knowledge of Islamic astrology. He has successfully helped over 50,000 people worldwide to find solutions to their love problems, marital disputes, black magic effects, business issues, and health concerns.</p>
+                    
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Certified Islamic Astrologer</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>100% Confidential</span>
+                        </div>
+                        <div class="trust-badge">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Available</span>
+                        </div>
+                    </div>
                     
                     <div class="achievements">
                         <div class="achievement">
@@ -316,7 +409,13 @@
                     <a href="/about.html" class="cta-button">Read Full Biography</a>
                 </div>
                 <div class="about-image">
-                    <img src="assets/images/Molana.png" alt="Molana Noor Shah - Experienced Muslim Astrologer" width="400" height="500">
+                    <img src="assets/images/Molana.png" alt="Molana Noor Shah - Experienced Muslim Astrologer" width="400" height="500" loading="lazy">
+                    <div class="image-overlay">
+                        <div class="experience-badge">
+                            <div class="years">25+</div>
+                            <div class="text">Years of<br>Experience</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -326,41 +425,125 @@
     <section class="testimonials-section">
         <div class="container">
             <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I got my husband back within 7 days with Molana Noor Shah's help. He was having an affair but now our marriage is stronger than ever. Thank you so much!"</p>
-                    <div class="client-info">
-                        <strong>Fatima Khan</strong>
-                        <span>Mumbai, India</span>
+            <p class="section-description">Real stories from thousands of satisfied clients who found solutions to their problems</p>
+            
+            <div class="testimonials-carousel">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-avatar-1.jpg" alt="Fatima Khan - Satisfied Client" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwNTk2NjkiLz4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMkMxNC4yMDkxIDEyIDE2IDEwLjIwOTEgMTYgOEMxNiA1Ljc5MDg2IDE0LjIwOTEgNCAxMiA0QzkuNzkwODYgNCA4IDUuNzkwODYgOCA4QzggMTAuMjA5MSA5Ljc5MDg2IDEyIDEyIDEyWk0xMiAxNEM5LjMzIDE0IDUgMTUuMDkgNSAxN1YxOUgxOVYxN0MxOSAxNS4wOSAxNC42NyAxNCAxMiAxNFoiLz4KPC9zdmc+Cjwvc3ZnPgo='">
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I got my husband back within 7 days with Molana Noor Shah's help. He was having an affair but now our marriage is stronger than ever. Thank you so much!"</p>
+                        <div class="client-info">
+                            <strong>Fatima Khan</strong>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-avatar-2.jpg" alt="Ahmed Ali - Satisfied Client" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwNTk2NjkiLz4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMkMxNC4yMDkxIDEyIDE2IDEwLjIwOTEgMTYgOEMxNiA1Ljc5MDg2IDE0LjIwOTEgNCAxMiA0QzkuNzkwODYgNCA4IDUuNzkwODYgOCA4QzggMTAuMjA5MSA5Ljc5MDg2IDEyIDEyIDEyWk0xMiAxNEM5LjMzIDE0IDUgMTUuMDkgNSAxN1YxOUgxOVYxN0MxOSAxNS4wOSAxNC42NyAxNCAxMiAxNFoiLz4KPC9zdmc+Cjwvc3ZnPgo='">
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"My business was failing due to black magic. Molana ji removed all negative energies and now my business is thriving. Highly recommended!"</p>
+                        <div class="client-info">
+                            <strong>Ahmed Ali</strong>
+                            <span>Delhi, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-avatar-3.jpg" alt="Ayesha Begum - Satisfied Client" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwNTk2NjkiLz4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMkMxNC4yMDkxIDEyIDE2IDEwLjIwOTEgMTYgOEMxNiA1Ljc5MDg2IDE0LjIwOTEgNCAxMiA0QzkuNzkwODYgNCA4IDUuNzkwODYgOCA4QzggMTAuMjA5MSA5Ljc5MDg2IDEyIDEyIDEyWk0xMiAxNEM5LjMzIDE0IDUgMTUuMDkgNSAxN1YxOUgxOVYxN0MxOSAxNS4wOSAxNC42NyAxNCAxMiAxNFoiLz4KPC9zdmc+Cjwvc3ZnPgo='">
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"I was suffering from unknown health issues for years. After Molana Noor Shah's spiritual healing, I am completely healthy now. Allah bless him!"</p>
+                        <div class="client-info">
+                            <strong>Ayesha Begum</strong>
+                            <span>Bangalore, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-avatar-4.jpg" alt="Rahul Sharma - Satisfied Client" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwNTk2NjkiLz4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMkMxNC4yMDkxIDEyIDE2IDEwLjIwOTEgMTYgOEMxNiA1Ljc5MDg2IDE0LjIwOTEgNCAxMiA0QzkuNzkwODYgNCA4IDUuNzkwODYgOCA4QzggMTAuMjA5MSA5Ljc5MDg2IDEyIDEyIDEyWk0xMiAxNEM5LjMzIDE0IDUgMTUuMDkgNSAxN1YxOUgxOVYxN0MxOSAxNS4wOSAxNC42NyAxNCAxMiAxNFoiLz4KPC9zdmc+Cjwvc3ZnPgo='">
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"After 5 years of trying, we finally got blessed with a child thanks to Molana Noor Shah's prayers and guidance. Our family is complete now!"</p>
+                        <div class="client-info">
+                            <strong>Rahul Sharma</strong>
+                            <span>Pune, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-avatar-5.jpg" alt="Priya Patel - Satisfied Client" loading="lazy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiMwNTk2NjkiLz4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMkMxNC4yMDkxIDEyIDE2IDEwLjIwOTEgMTYgOEMxNiA1Ljc5MDg2IDE0LjIwOTEgNCAxMiA0QzkuNzkwODYgNCA4IDUuNzkwODYgOCA4QzggMTAuMjA5MSA5Ljc5MDg2IDEyIDEyIDEyWk0xMiAxNEM5LjMzIDE0IDUgMTUuMDkgNSAxN1YxOUgxOVYxN0MxOSAxNS4wOSAxNC42NyAxNCAxMiAxNFoiLz4KPC9zdmc+Cjwvc3ZnPgo='">
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"My career was stuck for 3 years. After Molana ji's consultation, I got a promotion within 2 months. His guidance changed my life completely!"</p>
+                        <div class="client-info">
+                            <strong>Priya Patel</strong>
+                            <span>Chennai, India</span>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"My business was failing due to black magic. Molana ji removed all negative energies and now my business is thriving. Highly recommended!"</p>
-                    <div class="client-info">
-                        <strong>Ahmed Ali</strong>
-                        <span>Delhi, India</span>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                        <span class="dot" data-slide="3"></span>
+                        <span class="dot" data-slide="4"></span>
                     </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I was suffering from unknown health issues for years. After Molana Noor Shah's spiritual healing, I am completely healthy now. Allah bless him!"</p>
-                    <div class="client-info">
-                        <strong>Ayesha Begum</strong>
-                        <span>Bangalore, India</span>
-                    </div>
+                    <button class="carousel-btn next-btn" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
+            
             <div class="testimonials-cta">
                 <a href="/testimonials.html" class="cta-button">Read More Testimonials</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section - Enhanced with FontAwesome icons and comprehensive form -->
     <section class="contact-section">
         <div class="container">
             <h2>Contact Molana Noor Shah</h2>
@@ -369,7 +552,9 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="icon">📞</div>
+                        <div class="icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
                         <div class="details">
                             <h3>Phone Number</h3>
                             <a href="tel:+919876543210">+91-9876543210</a>
@@ -378,7 +563,9 @@
                     </div>
                     
                     <div class="contact-item">
-                        <div class="icon">📧</div>
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
                         <div class="details">
                             <h3>Email</h3>
                             <a href="mailto:contact@molaananoorshah.com">contact@molaananoorshah.com</a>
@@ -387,7 +574,9 @@
                     </div>
                     
                     <div class="contact-item">
-                        <div class="icon">💬</div>
+                        <div class="icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
                         <div class="details">
                             <h3>WhatsApp</h3>
                             <a href="https://wa.me/919876543210">+91-9876543210</a>
@@ -396,7 +585,9 @@
                     </div>
                     
                     <div class="contact-item">
-                        <div class="icon">🕐</div>
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
                         <div class="details">
                             <h3>Working Hours</h3>
                             <span>24 Hours / 7 Days</span>
@@ -511,16 +702,32 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-</body>
-</html>
+                <!-- JavaScript -->
+            <script src="assets/js/main.js"></script>
+            
+            <!-- Floating WhatsApp Widget - getbutton.io integration for mobile-friendly chat -->
+            <script>
+                (function () {
+                    var options = {
+                        whatsapp: "+919876543210",
+                        call_to_action: "Message us on WhatsApp!",
+                        position: "right",
+                        pre_filled_message: "Hello! I need help with my problem. Can you please guide me?"
+                    };
+                    var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                    s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                })();
+            </script>
+            
+            <!-- Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'GA_MEASUREMENT_ID');
+            </script>
+        </body>
+        </html>

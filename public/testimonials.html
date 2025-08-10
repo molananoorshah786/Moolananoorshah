@@ -19,6 +19,12 @@
     <meta property="og:url" content="https://www.molaananoorshah.com/testimonials.html">
     <meta property="og:image" content="https://www.molaananoorshah.com/assets/images/testimonials.jpg">
     
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -55,54 +61,48 @@
                 </div>
                 <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about.html">About Molana</a></li>
-                        <li><a href="/services/">Services</a></li>
-                        <li><a href="/testimonials.html" aria-current="page">Testimonials</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About Molana</a></li>
+                        <li><a href="./services/index.html">Services</a></li>
+                        <li><a href="./testimonials.html" aria-current="page">Testimonials</a></li>
+                        <li><a href="./blog/index.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-contact">
-                    <a href="tel:+919876543210" class="phone-number">📞 +91-9876543210</a>
+                    <a href="tel:+919876543210" class="phone-number"><i class="fas fa-phone-alt"></i> +91-9876543210</a>
                     <span class="availability">Available 24/7</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <!-- <nav class="breadcrumb" aria-label="Breadcrumb">
-        <div class="container">
-            <ol>
-                <li><a href="/">Home</a></li>
-                <li aria-current="page">Testimonials</li>
-            </ol>
-        </div>
-    </nav> -->
-
     <!-- Testimonials Hero Section -->
     <section class="testimonials-hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Client Testimonials</h1>
-                <h1>Real Success Stories from Satisfied Clients</h1>
-                <h3>Discover how Molana Noor Shah has transformed thousands of lives with his powerful spiritual solutions. Read genuine testimonials from clients who found happiness, love, and success through his divine guidance.</h3>
+                <h1 class="fade-in">Client Testimonials</h1>
+                <h2 class="fade-in">Real Success Stories from Satisfied Clients</h2>
+                <h3 class="fade-in">Discover how Molana Noor Shah has transformed thousands of lives with his powerful spiritual solutions. Read genuine testimonials from clients who found happiness, love, and success through his divine guidance.</h3>
                 
-                <div class="testimonials-stats">
+                <div class="testimonials-stats fade-in">
                     <div class="stat">
+                        <i class="fas fa-users"></i>
                         <strong>50,000+</strong>
                         <span>Happy Clients</span>
                     </div>
                     <div class="stat">
+                        <i class="fas fa-chart-line"></i>
                         <strong>99%</strong>
                         <span>Success Rate</span>
                     </div>
                     <div class="stat">
+                        <i class="fas fa-star"></i>
                         <strong>4.9/5</strong>
                         <span>Client Rating</span>
                     </div>
                     <div class="stat">
+                        <i class="fas fa-clock"></i>
                         <strong>25+</strong>
                         <span>Years Experience</span>
                     </div>
@@ -111,297 +111,445 @@
         </div>
     </section>
 
-    <!-- Love Problem Testimonials -->
-    <section class="love-testimonials">
+    <!-- Featured Testimonials Carousel -->
+    <section class="featured-testimonials">
         <div class="container">
-            <h2>Love Problem Solution Success Stories</h2>
-            <p class="section-description">Real testimonials from clients who got their love back and solved relationship problems</p>
+            <h2 class="section-title fade-in">Featured Success Stories</h2>
+            <p class="section-description fade-in">Real testimonials from clients who transformed their lives with Molana Noor Shah's guidance</p>
             
-            <div class="testimonials-grid">
-                <div class="testimonial-card featured">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I was devastated when my boyfriend left me for another girl. I tried everything but nothing worked. Then I contacted Molana Noor Shah ji. Within just 5 days, my boyfriend came back and apologized for everything. He even proposed to me! We are now happily married. Molana ji is truly a miracle worker. I will be forever grateful."</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-priya.jpg" alt="Client Priya" width="50" height="50">
-                        <div class="info">
-                            <strong>Priya Sharma</strong>
-                            <span>Mumbai, India</span>
-                            <span class="problem">Problem: Ex Boyfriend Left</span>
-                            <span class="result">Result: Got Married</span>
+            <div class="testimonials-carousel fade-in">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-priya.jpg" alt="Client Priya Sharma" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I was devastated when my boyfriend left me for another girl. I tried everything but nothing worked. Then I contacted Molana Noor Shah ji. Within just 5 days, my boyfriend came back and apologized for everything. He even proposed to me! We are now happily married. Molana ji is truly a miracle worker."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Priya Sharma</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Ex Boyfriend Left</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Got Married</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-rahul.jpg" alt="Client Rahul Mehta" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I was in one-sided love for 3 years. The girl I loved didn't even talk to me properly. My family was pressuring me to get married to someone else. I was losing hope when I found Molana Noor Shah. His solution was amazing - within a week, she confessed her love to me and we are now engaged!"</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Rahul Mehta</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Delhi, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> One-Sided Love</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Got Engaged</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-fatima.jpg" alt="Client Fatima Khan" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"My husband was having an affair and wanted divorce. We have two small children and I was completely broken. Molana Noor Shah gave me hope and his spiritual solution worked miracles. My husband ended his affair, came back home, and now our marriage is stronger than ever."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Fatima Khan</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Hyderabad, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Husband's Affair</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Marriage Saved</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-deepak.jpg" alt="Client Deepak Gupta" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"My business was failing badly despite all efforts. I was losing money continuously and facing unexpected problems. Someone told me it might be black magic. Molana Noor Shah detected strong black magic and removed it completely. Now my business is thriving and I'm earning good profits!"</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Deepak Gupta</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Pune, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Business Failure</span>
+                                    <span class="result"><i class="fas fa-chart-line"></i> Business Success</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-sofia.jpg" alt="Client Sofia Ahmed" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I am from USA and found Molana Noor Shah online. My marriage was on the verge of divorce and I was desperate. Despite the distance, his spiritual solutions worked perfectly. We had video consultations and he guided me step by step. My marriage is saved and we are happy again!"</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Sofia Ahmed</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> New York, USA</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Divorce Issue</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Marriage Saved</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I was in one-sided love for 3 years. The girl I loved didn't even talk to me properly. My family was pressuring me to get married to someone else. I was losing hope when I found Molana Noor Shah. His solution was amazing - within a week, she confessed her love to me and we are now engaged!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-rahul.jpg" alt="Client Rahul" width="50" height="50">
-                        <div class="info">
-                            <strong>Rahul Mehta</strong>
-                            <span>Delhi, India</span>
-                            <span class="problem">Problem: One-Sided Love</span>
-                            <span class="result">Result: Got Engaged</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Our families were against our inter-caste marriage. We tried for 2 years but couldn't convince them. Molana Noor Shah's prayers and remedies changed everything. Both families agreed and we got married with their full blessings. It was like a miracle happened in our lives."</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-anjali.jpg" alt="Client Anjali" width="50" height="50">
-                        <div class="info">
-                            <strong>Anjali & Vikram</strong>
-                            <span>Bangalore, India</span>
-                            <span class="problem">Problem: Inter-Caste Marriage</span>
-                            <span class="result">Result: Family Approval</span>
-                        </div>
-                    </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots"></div>
+                    <button class="carousel-btn next-btn" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Husband Wife Problem Testimonials -->
-    <section class="marriage-testimonials">
+    <!-- Category-based Testimonials Grid -->
+    <section class="category-testimonials">
         <div class="container">
-            <h2>Husband Wife Problem Solution Testimonials</h2>
-            <p class="section-description">Success stories of saved marriages and restored family harmony</p>
+            <h2 class="section-title fade-in">Success Stories by Category</h2>
+            <p class="section-description fade-in">Browse testimonials based on your specific problem type</p>
             
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"My husband was having an affair and wanted divorce. We have two small children and I was completely broken. Molana Noor Shah gave me hope and his spiritual solution worked miracles. My husband ended his affair, came back home, and now our marriage is stronger than ever. Thank you so much!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-fatima.jpg" alt="Client Fatima" width="50" height="50">
-                        <div class="info">
-                            <strong>Fatima Khan</strong>
-                            <span>Hyderabad, India</span>
-                            <span class="problem">Problem: Husband's Affair</span>
-                            <span class="result">Result: Marriage Saved</span>
-                        </div>
-                    </div>
+            <!-- Love Problem Testimonials -->
+            <div class="testimonial-category fade-in">
+                <div class="category-header">
+                    <i class="fas fa-heart"></i>
+                    <h3>Love Problem Solutions</h3>
+                    <p>Real stories of love restored and relationships healed</p>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Constant fights with in-laws made our life hell. My wife wanted to leave me because of family disputes. Molana ji's solution brought peace to our family. Now we all live happily together and there are no more conflicts. His spiritual guidance saved our marriage and family."</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-ahmad.jpg" alt="Client Ahmad" width="50" height="50">
-                        <div class="info">
-                            <strong>Ahmad Ali</strong>
-                            <span>Lucknow, India</span>
-                            <span class="problem">Problem: Family Disputes</span>
-                            <span class="result">Result: Family Peace</span>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-anjali.jpg" alt="Client Anjali" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Our families were against our inter-caste marriage. We tried for 2 years but couldn't convince them. Molana Noor Shah's prayers and remedies changed everything. Both families agreed and we got married with their full blessings."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Anjali & Vikram</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Inter-Caste Marriage</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Family Approval</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"After 15 years of marriage, my husband suddenly became very distant and cruel. I suspected black magic. Molana Noor Shah confirmed it and removed the negative effects. My husband is back to his loving self and our marriage is happy again."</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-sarah.jpg" alt="Client Sarah" width="50" height="50">
-                        <div class="info">
-                            <strong>Sarah Begum</strong>
-                            <span>Kolkata, India</span>
-                            <span class="problem">Problem: Husband's Behavior</span>
-                            <span class="result">Result: Love Restored</span>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-omar.jpg" alt="Client Omar Khan" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"From London, UK - I lost my love due to family pressure and was heartbroken for months. Molana Noor Shah's love solution brought my girlfriend back. She convinced her family and we are now engaged."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Omar Khan</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> London, UK</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Lost Love</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Got Engaged</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Black Magic Removal Testimonials -->
-    <section class="blackmagic-testimonials">
-        <div class="container">
-            <h2>Black Magic Removal Success Stories</h2>
-            <p class="section-description">Real experiences of clients who got protection from negative energies</p>
             
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"My business was failing badly despite all efforts. I was losing money continuously and facing unexpected problems. Someone told me it might be black magic. Molana Noor Shah detected strong black magic and removed it completely. Now my business is thriving and I'm earning good profits!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-deepak.jpg" alt="Client Deepak" width="50" height="50">
-                        <div class="info">
-                            <strong>Deepak Gupta</strong>
-                            <span>Pune, India</span>
-                            <span class="problem">Problem: Business Failure</span>
-                            <span class="result">Result: Business Success</span>
-                        </div>
-                    </div>
+            <!-- Marriage Problem Testimonials -->
+            <div class="testimonial-category fade-in">
+                <div class="category-header">
+                    <i class="fas fa-rings-wedding"></i>
+                    <h3>Marriage Problem Solutions</h3>
+                    <p>Stories of marriages saved and family harmony restored</p>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I was suffering from unknown health issues for years. Doctors couldn't find anything wrong but I was always sick and weak. Molana ji identified black magic effects and performed spiritual healing. I am completely healthy now and full of energy. Allah bless him!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-ayesha.jpg" alt="Client Ayesha" width="50" height="50">
-                        <div class="info">
-                            <strong>Ayesha Begum</strong>
-                            <span>Chennai, India</span>
-                            <span class="problem">Problem: Health Issues</span>
-                            <span class="result">Result: Complete Recovery</span>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-ahmad.jpg" alt="Client Ahmad Ali" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Constant fights with in-laws made our life hell. My wife wanted to leave me because of family disputes. Molana ji's solution brought peace to our family. Now we all live happily together."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Ahmad Ali</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Lucknow, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Family Disputes</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Family Peace</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Strange things were happening in our house - fights, accidents, financial losses. Everything was going wrong suddenly. Molana Noor Shah removed the black magic from our home and gave us protective prayers. Now our family is happy and peaceful again."</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-hassan.jpg" alt="Client Hassan" width="50" height="50">
-                        <div class="info">
-                            <strong>Hassan Sheikh</strong>
-                            <span>Jaipur, India</span>
-                            <span class="problem">Problem: Family Problems</span>
-                            <span class="result">Result: Peace & Protection</span>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-sarah.jpg" alt="Client Sarah Begum" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"After 15 years of marriage, my husband suddenly became very distant and cruel. I suspected black magic. Molana Noor Shah confirmed it and removed the negative effects. My husband is back to his loving self."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Sarah Begum</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Kolkata, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Husband's Behavior</span>
+                                    <span class="result"><i class="fas fa-heart"></i> Love Restored</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Business & Career Testimonials -->
-    <section class="business-testimonials">
-        <div class="container">
-            <h2>Business & Career Success Stories</h2>
-            <p class="section-description">Testimonials from clients who achieved professional and financial success</p>
             
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I was jobless for 2 years despite having good qualifications. Every interview would go well but I wouldn't get selected. Molana Noor Shah's career solution worked wonderfully. Within 3 weeks, I got a job offer from a multinational company with excellent salary!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-rajesh.jpg" alt="Client Rajesh" width="50" height="50">
-                        <div class="info">
-                            <strong>Rajesh Kumar</strong>
-                            <span>Gurgaon, India</span>
-                            <span class="problem">Problem: Unemployment</span>
-                            <span class="result">Result: Dream Job</span>
-                        </div>
-                    </div>
+            <!-- Black Magic Removal Testimonials -->
+            <div class="testimonial-category fade-in">
+                <div class="category-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Black Magic Removal</h3>
+                    <p>Real experiences of protection from negative energies</p>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"My small shop was running at losses and I was in huge debt. I was about to close everything when I contacted Molana ji. His business solution and prayers brought amazing results. Now I have expanded to 3 shops and cleared all debts. Incredible!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-mohammed.jpg" alt="Client Mohammed" width="50" height="50">
-                        <div class="info">
-                            <strong>Mohammed Azam</strong>
-                            <span>Ahmedabad, India</span>
-                            <span class="problem">Problem: Business Loss</span>
-                            <span class="result">Result: Business Growth</span>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-ayesha.jpg" alt="Client Ayesha Begum" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I was suffering from unknown health issues for years. Doctors couldn't find anything wrong but I was always sick and weak. Molana ji identified black magic effects and performed spiritual healing. I am completely healthy now."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Ayesha Begum</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Chennai, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Health Issues</span>
+                                    <span class="result"><i class="fas fa-heartbeat"></i> Complete Recovery</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-hassan.jpg" alt="Client Hassan Sheikh" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Strange things were happening in our house - fights, accidents, financial losses. Everything was going wrong suddenly. Molana Noor Shah removed the black magic from our home and gave us protective prayers."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Hassan Sheikh</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Jaipur, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Family Problems</span>
+                                    <span class="result"><i class="fas fa-shield-check"></i> Peace & Protection</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- International Testimonials -->
-    <section class="international-testimonials">
-        <div class="container">
-            <h2>International Client Testimonials</h2>
-            <p class="section-description">Success stories from clients around the world</p>
             
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"I am from USA and found Molana Noor Shah online. My marriage was on the verge of divorce and I was desperate. Despite the distance, his spiritual solutions worked perfectly. We had video consultations and he guided me step by step. My marriage is saved and we are happy again!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-sofia.jpg" alt="Client Sofia" width="50" height="50">
-                        <div class="info">
-                            <strong>Sofia Ahmed</strong>
-                            <span>New York, USA</span>
-                            <span class="problem">Problem: Divorce Issue</span>
-                            <span class="result">Result: Marriage Saved</span>
+            <!-- Business & Career Testimonials -->
+            <div class="testimonial-category fade-in">
+                <div class="category-header">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business & Career Success</h3>
+                    <p>Stories of professional growth and financial success</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-rajesh.jpg" alt="Client Rajesh Kumar" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I was jobless for 2 years despite having good qualifications. Every interview would go well but I wouldn't get selected. Molana Noor Shah's career solution worked wonderfully. Within 3 weeks, I got a job offer from a multinational company!"</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Rajesh Kumar</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Gurgaon, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Unemployment</span>
+                                    <span class="result"><i class="fas fa-briefcase"></i> Dream Job</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"From London, UK - I lost my love due to family pressure and was heartbroken for months. Molana Noor Shah's love solution brought my girlfriend back. She convinced her family and we are now engaged. Distance is no barrier for his spiritual powers!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-omar.jpg" alt="Client Omar" width="50" height="50">
-                        <div class="info">
-                            <strong>Omar Khan</strong>
-                            <span>London, UK</span>
-                            <span class="problem">Problem: Lost Love</span>
-                            <span class="result">Result: Got Engaged</span>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-image">
+                            <img src="assets/images/client-mohammed.jpg" alt="Client Mohammed Azam" loading="lazy" onerror="this.style.display='none'">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"My small shop was running at losses and I was in huge debt. I was about to close everything when I contacted Molana ji. His business solution and prayers brought amazing results. Now I have expanded to 3 shops and cleared all debts."</p>
+                            <div class="client-info">
+                                <h4 class="client-name">Mohammed Azam</h4>
+                                <p class="client-location"><i class="fas fa-map-marker-alt"></i> Ahmedabad, India</p>
+                                <div class="problem-result">
+                                    <span class="problem"><i class="fas fa-exclamation-triangle"></i> Business Loss</span>
+                                    <span class="result"><i class="fas fa-chart-line"></i> Business Growth</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Calling from Canada - I was facing severe business problems and financial crisis. Molana ji's guidance and spiritual remedies turned my luck completely. My business is now profitable and I have achieved financial stability. Highly recommended!"</p>
-                    <div class="client-info">
-                        <img src="assets/images/client-zara.jpg" alt="Client Zara" width="50" height="50">
-                        <div class="info">
-                            <strong>Zara Malik</strong>
-                            <span>Toronto, Canada</span>
-                            <span class="problem">Problem: Financial Crisis</span>
-                            <span class="result">Result: Financial Success</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Testimonials Section -->
-    <section class="video-testimonials">
-        <div class="container">
-            <h2>Video Testimonials</h2>
-            <p class="section-description">Watch real clients sharing their success stories</p>
-            
-            <div class="video-grid">
-                <div class="video-testimonial">
-                    <div class="video-placeholder">
-                        <img src="assets/images/video-testimonial-1.jpg" alt="Love Problem Solution Video Testimonial" width="300" height="200">
-                        <div class="play-button">▶️</div>
-                    </div>
-                    <h3>Love Problem Solution Success</h3>
-                    <p>Watch how Priya got her love back in just 5 days</p>
-                </div>
-                
-                <div class="video-testimonial">
-                    <div class="video-placeholder">
-                        <img src="assets/images/video-testimonial-2.jpg" alt="Black Magic Removal Video Testimonial" width="300" height="200">
-                        <div class="play-button">▶️</div>
-                    </div>
-                    <h3>Black Magic Removal Success</h3>
-                    <p>Business owner shares how black magic removal saved his business</p>
-                </div>
-                
-                <div class="video-testimonial">
-                    <div class="video-placeholder">
-                        <img src="assets/images/video-testimonial-3.jpg" alt="Marriage Problem Solution Video Testimonial" width="300" height="200">
-                        <div class="play-button">▶️</div>
-                    </div>
-                    <h3>Marriage Saved Successfully</h3>
-                    <p>Couple shares how their marriage was saved from divorce</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Overall Rating Section -->
-    <section class="overall-rating">
+    <section class="overall-rating fade-in">
         <div class="container">
-            <h2>Overall Client Satisfaction</h2>
+            <h2 class="section-title">Overall Client Satisfaction</h2>
             <div class="rating-summary">
                 <div class="rating-score">
                     <span class="score">4.9</span>
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                     <p>Based on 2,500+ Reviews</p>
                 </div>
                 
@@ -447,10 +595,10 @@
     </section>
 
     <!-- Submit Testimonial -->
-    <section class="submit-testimonial">
+    <section class="submit-testimonial fade-in">
         <div class="container">
-            <h2>Share Your Success Story</h2>
-            <p>Have you been helped by Molana Noor Shah? Share your experience to inspire others.</p>
+            <h2 class="section-title">Share Your Success Story</h2>
+            <p class="section-description">Have you been helped by Molana Noor Shah? Share your experience to inspire others.</p>
             
             <form class="testimonial-form">
                 <div class="form-group">
@@ -473,15 +621,15 @@
                     <label>Rate Your Experience:</label>
                     <div class="stars-input">
                         <input type="radio" name="rating" value="5" id="star5">
-                        <label for="star5">⭐</label>
+                        <label for="star5"><i class="fas fa-star"></i></label>
                         <input type="radio" name="rating" value="4" id="star4">
-                        <label for="star4">⭐</label>
+                        <label for="star4"><i class="fas fa-star"></i></label>
                         <input type="radio" name="rating" value="3" id="star3">
-                        <label for="star3">⭐</label>
+                        <label for="star3"><i class="fas fa-star"></i></label>
                         <input type="radio" name="rating" value="2" id="star2">
-                        <label for="star2">⭐</label>
+                        <label for="star2"><i class="fas fa-star"></i></label>
                         <input type="radio" name="rating" value="1" id="star1">
-                        <label for="star1">⭐</label>
+                        <label for="star1"><i class="fas fa-star"></i></label>
                     </div>
                 </div>
                 <textarea name="testimonial" placeholder="Share your success story and experience with Molana Noor Shah..." rows="5" required></textarea>
@@ -491,16 +639,16 @@
     </section>
 
     <!-- Contact CTA -->
-    <section class="contact-cta">
+    <section class="contact-cta fade-in">
         <div class="container">
-            <h2>Ready to Create Your Own Success Story?</h2>
-            <p>Join thousands of satisfied clients who transformed their lives with Molana Noor Shah's guidance.</p>
+            <h2 class="section-title">Ready to Create Your Own Success Story?</h2>
+            <p class="section-description">Join thousands of satisfied clients who transformed their lives with Molana Noor Shah's guidance.</p>
             <div class="cta-options">
-                <a href="tel:+919876543210" class="cta-button primary">📞 Call Now: +91-9876543210</a>
-                <a href="https://wa.me/919876543210" class="cta-button secondary">💬 WhatsApp Chat</a>
-                <a href="mailto:contact@molaananoorshah.com" class="cta-button">📧 Email Us</a>
+                <a href="tel:+919876543210" class="cta-button primary"><i class="fas fa-phone-alt"></i> Call Now: +91-9876543210</a>
+                <a href="https://wa.me/919876543210" class="cta-button secondary"><i class="fab fa-whatsapp"></i> WhatsApp Chat</a>
+                <a href="mailto:contact@molaananoorshah.com" class="cta-button"><i class="fas fa-envelope"></i> Email Us</a>
             </div>
-            <p class="guarantee">💯 100% Confidential | 24/7 Available | Guaranteed Results</p>
+            <p class="guarantee"><i class="fas fa-shield-alt"></i> 100% Confidential | <i class="fas fa-clock"></i> 24/7 Available | <i class="fas fa-check-circle"></i> Guaranteed Results</p>
         </div>
     </section>
 
@@ -512,43 +660,43 @@
                     <h3>Molana Noor Shah</h3>
                     <p>World-famous Muslim astrologer dedicated to solving your life problems through the divine power of Islamic astrology.</p>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Instagram">📷</a>
-                        <a href="#" aria-label="YouTube">📺</a>
-                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/services/">Services</a></li>
-                        <li><a href="/testimonials.html">Testimonials</a></li>
-                        <li><a href="/blog/">Blog</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./services/index.html">Services</a></li>
+                        <li><a href="./testimonials.html">Testimonials</a></li>
+                        <li><a href="./blog/index.html">Blog</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="/services/love-problem-solution.html">Love Problem Solution</a></li>
-                        <li><a href="/services/husband-wife-problem.html">Husband Wife Problem</a></li>
-                        <li><a href="/services/black-magic-removal.html">Black Magic Removal</a></li>
-                        <li><a href="/services/business-problem.html">Business Problem</a></li>
-                        <li><a href="/services/health-problem.html">Health Problem</a></li>
+                        <li><a href="./services/love-problem-solution.html">Love Problem Solution</a></li>
+                        <li><a href="./services/husband-wife-problem.html">Husband Wife Problem</a></li>
+                        <li><a href="./services/black-magic-removal.html">Black Magic Removal</a></li>
+                        <li><a href="./services/business-problem.html">Business Problem</a></li>
+                        <li><a href="./services/health-problem.html">Health Problem</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Contact Info</h3>
                     <div class="contact-details">
-                        <p>📞 <a href="tel:+919876543210">+91-9876543210</a></p>
-                        <p>📧 <a href="mailto:contact@molaananoorshah.com">contact@molaananoorshah.com</a></p>
-                        <p>💬 <a href="https://wa.me/919876543210">WhatsApp</a></p>
-                        <p>🕐 Available 24/7</p>
+                        <p><i class="fas fa-phone-alt"></i> <a href="tel:+919876543210">+91-9876543210</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:contact@molaananoorshah.com">contact@molaananoorshah.com</a></p>
+                        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919876543210">WhatsApp</a></p>
+                        <p><i class="fas fa-clock"></i> Available 24/7</p>
                     </div>
                 </div>
             </div>
@@ -558,6 +706,21 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <script>
+        (function () {
+            var options = {
+                whatsapp: "+919876543210",
+                call_to_action: "Chat with us on WhatsApp!",
+                position: "right",
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//" + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+    </script>
 
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
